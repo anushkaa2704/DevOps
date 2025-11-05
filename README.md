@@ -1,9 +1,8 @@
 
-<hr>
 <h3>To Create Docker Image of any application.(powershell)</h3>
 mkdir docker-lab<br>
 cd docker-lab<br>
-echo '<h3>My First Docker App! Success! ✅</h3>' > index.html<br>
+echo '<h5>My First Docker App! Success! ✅</h5>' > index.html<br>
 @'<br>
 FROM nginx:alpine<br>
 COPY index.html /usr/share/nginx/html/index.html<br>
