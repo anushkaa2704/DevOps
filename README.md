@@ -10,6 +10,9 @@ type Dockerfile <br>
 docker build -t a26 . <br>
 docker images <br>
 docker run img_id <br>
+
+
+
 <hr>
 <h3>To Create Docker Image of any application.(powershell)</h3>
 mkdir docker-lab<br>
@@ -35,3 +38,18 @@ docker images (ngnix should be visible)<br>
 docker tag nginx anushkaa2704/new-nginx<br>
 docker images (new-ngnix should be visible)<br>
 docker push anushkaa2704/new-nginx<br>
+
+
+
+
+<h4>Pull OS Images</h4>
+docker pull ubuntu:20.04<br>
+docker pull alpine:latest<br>
+<h4> Create Containers </h4>
+docker run -it --name ubuntu-os ubuntu:20.04 /bin/bash<br>
+docker run -it --name alpine-os alpine:latest /bin/sh<br>
+<h4>run</h4>
+docker run -it --name ubuntu-container ubuntu:20.04 /bin/bash<br>
+docker run -it --name alpine-container alpine:latest /bin/sh<br>
+
+
