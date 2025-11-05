@@ -1,4 +1,3 @@
-
 <h3>To Create Docker Image of any application.(powershell)</h3>
 mkdir docker-lab<br>
 cd docker-lab<br>
