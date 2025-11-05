@@ -11,10 +11,10 @@ docker build -t a26 . <br>
 docker images <br>
 docker run img_id <br>
 <hr>
-<h3>To Create Docker Image of any application.</h3>
+<h3>To Create Docker Image of any application.(powershell)</h3>
 mkdir docker-lab<br>
 cd docker-lab<br>
-echo '<h1>My First Docker App! Success! ✅</h1>' > index.html<br>
+echo '<h3>My First Docker App! Success! ✅</h3>' > index.html<br>
 @'<br>
 FROM nginx:alpine<br>
 COPY index.html /usr/share/nginx/html/index.html<br>
