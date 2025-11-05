@@ -20,12 +20,18 @@ FROM nginx:alpine<br>
 COPY index.html /usr/share/nginx/html/index.html<br>
 '@ | Out-File -FilePath Dockerfile -Encoding utf8<br>
 
-# 4 Get-ChildItem<br>
+Get-ChildItem<br>
 
-# 5. Build image<br>
 docker build -t my-first-app .<br>
-
-# 6. Run container<br>
 docker run -d -p 8888:80 --name first-container my-first-app <br>
 
-# 7. Access in browser: http://localhost:8888 <br>
+Access in browser: http://localhost:8888 <br>
+
+
+
+<h3>push & pull</h3>
+docker pull nginx:latest<br>
+docker images (ngnix should be visible)<br>
+docker tag nginx anushkaa2704/new-nginx<br>
+docker images (new-ngnix should be visible)<br>
+docker push anushkaa2704/new-nginx<br>
